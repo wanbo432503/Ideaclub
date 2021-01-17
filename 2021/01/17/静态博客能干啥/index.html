@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>静态博客能干啥 | Idea Club</title>
+  <title>静态博客能干啥? | Idea Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="动机这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。 之前的尝试此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。 此前也调研过基于npm的静态博客，但是印象中尝试失败了。 今天的尝">
+  <meta name="description" content="动机这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。 尝试此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。 此前也调研过基于npm的静态博客，但是使用起来十分不便，也由于时间关系，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="静态博客能干啥">
+<meta property="og:title" content="静态博客能干啥?">
 <meta property="og:url" content="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/index.html">
 <meta property="og:site_name" content="Idea Club">
-<meta property="og:description" content="动机这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。 之前的尝试此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。 此前也调研过基于npm的静态博客，但是印象中尝试失败了。 今天的尝">
+<meta property="og:description" content="动机这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。 尝试此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。 此前也调研过基于npm的静态博客，但是使用起来十分不便，也由于时间关系，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-17T11:46:09.000Z">
-<meta property="article:modified_time" content="2021-01-17T14:35:36.816Z">
+<meta property="article:modified_time" content="2021-01-17T14:44:14.206Z">
 <meta property="article:author" content="Bo Wan">
 <meta property="article:tag" content="静态博客 应用场景">
 <meta name="twitter:card" content="summary">
@@ -92,7 +92,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      静态博客能干啥
+      静态博客能干啥?
     </h1>
   
 
@@ -100,31 +100,32 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。</p>
-<p>思前想后，联想到了之前一直想做但又没有做成的静态博客。</p>
-<h2 id="之前的尝试"><a href="#之前的尝试" class="headerlink" title="之前的尝试"></a>之前的尝试</h2><p>此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。</p>
-<p>此前也调研过基于npm的静态博客，但是印象中尝试失败了。</p>
-<h2 id="今天的尝试"><a href="#今天的尝试" class="headerlink" title="今天的尝试"></a>今天的尝试</h2><p>网上搜索了一通之后，在github和gitee上有很多方式可以构建静态博客，如hexo，hugo等。于是乎，我就直接开始上手，选了一个hexo，star还算多的项目构建了一个基本的博客。</p>
-<h3 id="github尝试"><a href="#github尝试" class="headerlink" title="github尝试"></a>github尝试</h3><p>github上存在的问题就是网络访问延迟。尤其是当运行了还算优美的模板之后，访问速度慢得不可接受。</p>
-<h3 id="gitee尝试"><a href="#gitee尝试" class="headerlink" title="gitee尝试"></a>gitee尝试</h3><p>于是想到了国内的git项目，看是否能够克服网络访问这一难题。没想到gitee更坑爹，非会员repo无法自动更新hexo<br>deploy上去的博客内容，每次都需要在deploy之后手动点击gitee pages才能更新。实在不能忍受这一点。</p>
-<h3 id="最终尝试"><a href="#最终尝试" class="headerlink" title="最终尝试"></a>最终尝试</h3><p>于是，在github上运行了最基本的hexo博客模板（原生的模板）。</p>
-<h2 id="使用感受"><a href="#使用感受" class="headerlink" title="使用感受"></a>使用感受</h2><p>以上就是搭建静态模板的过程。过程曲折，但最终还是有了一个好结果——勉强能用的博客。</p>
-<p>就这么一个勉强能用的简单项目，是否有什么应用场景呢？</p>
-<h3 id="和动态博客比较"><a href="#和动态博客比较" class="headerlink" title="和动态博客比较"></a>和动态博客比较</h3><p>和动态博客比，功能简单出奇。就连评论的功能都需要借助第三方额外添加，更别说搜索和统计功能。因此，hexo原生的静态博客只能提供博客写作最基本的功能。</p>
-<h3 id="和rst博客相比"><a href="#和rst博客相比" class="headerlink" title="和rst博客相比"></a>和rst博客相比</h3><p>markdown的语法和一键上网部署的功能还是非常好的。就是markdown相较于rst的功能没有那么齐全而已。</p>
-<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>通过这个<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=WKUP3jM42kI&ab_channel=Glitch">视频</a>发现原来静态博客的配置还有这么多讲究。</p>
+        <h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。</p>
+<h2 id="尝试"><a href="#尝试" class="headerlink" title="尝试"></a>尝试</h2><p>此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。</p>
+<p>此前也调研过基于npm的静态博客，但是使用起来十分不便，也由于时间关系，半途而废了。</p>
+<p>今天，突发奇想。又想重新尝试这种记录思路的方式。网上搜索了一通之后，发现在github和gitee上都可以构建静态博客，如使用hexo，hugo等博客框架。于是乎，我就直接开始上手，选了hexo(star还算多)构建了一个基本的支持markdown语法的静态博客。</p>
+<h4 id="github尝试"><a href="#github尝试" class="headerlink" title="github尝试"></a>github尝试</h4><p>github上存在的问题就是网络访问延迟。尤其是当运行了还算优美的模板之后，访问速度慢得不可接受。</p>
+<h4 id="gitee尝试"><a href="#gitee尝试" class="headerlink" title="gitee尝试"></a>gitee尝试</h4><p>于是想到了国内的git项目，看是否能够克服网络访问这一难题。没想到gitee更坑爹，非会员repo无法自动更新hexo<br>deploy上去的博客内容，每次都需要在deploy之后手动点击gitee pages才能更新。实在不能忍受这一点。</p>
+<h4 id="最终尝试"><a href="#最终尝试" class="headerlink" title="最终尝试"></a>最终尝试</h4><p>于是，在github上运行了最基本的hexo博客模板（原生的模板）。</p>
+<h2 id="使用感受"><a href="#使用感受" class="headerlink" title="使用感受"></a>使用感受</h2><p>以上就是搭建静态模板的过程。过程曲折，但最终还是有了一个好结果——勉强能用的博客。 就这么一个勉强能用的简单项目，是否有什么应用场景呢？</p>
+<h4 id="和动态博客比较"><a href="#和动态博客比较" class="headerlink" title="和动态博客比较"></a>和动态博客比较</h4><p>和动态博客比，功能简单出奇。就连评论的功能都需要借助第三方额外添加，更别说搜索和统计功能。因此，hexo原生的静态博客只能提供博客写作最基本的功能。</p>
+<h4 id="和rst博客相比"><a href="#和rst博客相比" class="headerlink" title="和rst博客相比"></a>和rst博客相比</h4><p>markdown的语法和一键上网部署的功能还是非常好的。就是markdown相较于rst的功能没有那么齐全而已。</p>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><p>竟然已经上手了静态博客，那就要以尽可能专业的态度做好维护工作。上网继续深挖了一下hexo静态博客的技术和应用场景。结果一开始就发现了宝藏：</p>
+<p>通过这个<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=WKUP3jM42kI&ab_channel=Glitch">视频</a>发现原来静态博客的配置还有这么多讲究。</p>
 <p>尤其是npm工具库的强大，仅仅三个小工具，npm-watch，simper-server，以及npm-run-all，就可以实现静态博客的自动更新。也就是说，每当我保存一下我的markdown文件时，本地服务器上的内容就是实时进行更新显示。甚至都可以直接推送到github服务器上实时显示。</p>
 <p>显然，本地显示更有优势，因为速度更快。 这自动显示的功能也太强大了，这也太爽了！</p>
 <p>关于package.jason文件的配置我完全参考了视频中的做法，直接可用,如下代码所示。具体可以看我Ideaclub仓库中hexo的package.json的script部分的配置。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># package.jason</span><br><span class="line"></span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">      &quot;serve&quot;: &quot;hexo server&quot;,</span><br><span class="line">      &quot;watch&quot;: &quot;onchange &#39;_config.yml&#39; &#39;source&#x2F;**&#x2F;*&#39; &#39;themes&#x2F;**&#x2F;*&#39; -- hexo generate&quot;,</span><br><span class="line">      &quot;start&quot;: &quot;run-p watch serve&quot;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <p>当然，若要使得这段代码中的工具可以生效，在新配置的环境中，还需要安装好npm相关的工具：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 在我这个环境下无法显示模板jss效果，因此我还是采用了hexo server</span><br><span class="line">npm install simple-server # 这个工具可以替代hexo server</span><br><span class="line">npm install watch</span><br><span class="line">npm install onchange --save-dev</span><br><span class="line">npm install npm-run-all --save-dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 我这个环境下无法显示模板jss效果，因此我还是采用了hexo server</span><br><span class="line">npm install simple-server # 这个工具可以替代hexo server</span><br><span class="line">npm install watch</span><br><span class="line">npm install onchange --save-dev</span><br><span class="line">npm install npm-run-all --save-dev</span><br></pre></td></tr></table></figure>
 <p>安装上述工具的过程中，反复出现了装好onchange，npm-run-all失效，装好npm-run-all，onchange又失效的情况。当安装这两个工具时，都加上–save-dev参数，避免他们之间的相互依赖导致的安装后不能正常使用的情况。</p>
+<h3 id="应用场景挖掘"><a href="#应用场景挖掘" class="headerlink" title="应用场景挖掘"></a>应用场景挖掘</h3><p>后续，我还将对静态博客的应用场景和使用技术进行深入挖掘。毕竟hexo这么多star的一个项目，不可能只是用来谢谢博客而已。</p>
+<p>未完待续。。。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckk18a1320001kiu7eqz99rme" data-title="静态博客能干啥" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckk18a1320001kiu7eqz99rme" data-title="静态博客能干啥?" class="article-share-link">分享</a>
       
       
       
@@ -191,7 +192,7 @@
       <ul>
         
           <li>
-            <a href="/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/">静态博客能干啥</a>
+            <a href="/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/">静态博客能干啥?</a>
           </li>
         
           <li>

@@ -14,7 +14,7 @@
 <meta property="og:description" content="动机这几天断了头条（太浪费时间了），但是心想要找点什么事情补充这段空闲的时间。 思前想后，联想到了之前一直想做但又没有做成的静态博客。 尝试此前有过很多博客写作的尝试，如CSDN，rst静态博客。然而，CSDN太公开化，我写的内容还是偏向于个人总结或回顾用的；rst静态博客无法远程访问，且需要自己购买服务器和域名，十分不便。 此前也调研过基于npm的静态博客，但是使用起来十分不便，也由于时间关系，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-01-17T11:46:09.000Z">
-<meta property="article:modified_time" content="2021-01-17T14:44:14.206Z">
+<meta property="article:modified_time" content="2021-02-19T14:40:22.519Z">
 <meta property="article:author" content="Bo Wan">
 <meta property="article:tag" content="静态博客 应用场景">
 <meta name="twitter:card" content="summary">
@@ -119,13 +119,17 @@
 <p>当然，若要使得这段代码中的工具可以生效，在新配置的环境中，还需要安装好npm相关的工具：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 我这个环境下无法显示模板jss效果，因此我还是采用了hexo server</span><br><span class="line">npm install simple-server # 这个工具可以替代hexo server</span><br><span class="line">npm install watch</span><br><span class="line">npm install onchange --save-dev</span><br><span class="line">npm install npm-run-all --save-dev</span><br></pre></td></tr></table></figure>
 <p>安装上述工具的过程中，反复出现了装好onchange，npm-run-all失效，装好npm-run-all，onchange又失效的情况。当安装这两个工具时，都加上–save-dev参数，避免他们之间的相互依赖导致的安装后不能正常使用的情况。</p>
+<h3 id="本地服务开启"><a href="#本地服务开启" class="headerlink" title="本地服务开启"></a>本地服务开启</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd path_to_hexo</span><br><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<p>随后，就可以通过localhost:4000访问本地搭建的静态网页。并且该网站在每次本地编辑保存之后，会进行自动更新。</p>
+<h3 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h3><p>当本地文章写好，并完成调试之后，需要同步到github服务器上，这样才可以公开访问。由于本地已经对源文件进行了编译，因此只需要最后一步，即可同步到github服务器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <h3 id="应用场景挖掘"><a href="#应用场景挖掘" class="headerlink" title="应用场景挖掘"></a>应用场景挖掘</h3><p>后续，我还将对静态博客的应用场景和使用技术进行深入挖掘。毕竟hexo这么多star的一个项目，不可能只是用来谢谢博客而已。</p>
 <p>未完待续。。。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckk18a1320001kiu7eqz99rme" data-title="静态博客能干啥?" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckk1au2tl000143u75o9xaiko" data-title="静态博客能干啥?" class="article-share-link">分享</a>
       
       
       

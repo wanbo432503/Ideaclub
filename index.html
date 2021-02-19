@@ -120,8 +120,9 @@
 <p>随后，就可以通过localhost:4000访问本地搭建的静态网页。并且该网站在每次本地编辑保存之后，会进行自动更新。</p>
 <h3 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h3><p>当本地文章写好，并完成调试之后，需要同步到github服务器上，这样才可以公开访问。由于本地已经对源文件进行了编译，因此只需要最后一步，即可同步到github服务器。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="应用场景挖掘"><a href="#应用场景挖掘" class="headerlink" title="应用场景挖掘"></a>应用场景挖掘</h3><p>后续，我还将对静态博客的应用场景和使用技术进行深入挖掘。毕竟hexo这么多star的一个项目，不可能只是用来谢谢博客而已。</p>
-<p>未完待续。。。</p>
+<p>其余两个步骤，如下所示。此两步骤已经通过npm脚本名自动完成。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<h3 id="源文件保存"><a href="#源文件保存" class="headerlink" title="源文件保存"></a>源文件保存</h3><p>然而，deploy操作仅仅是将编译好的hexo静态网页同步到github上。为了备份本地源文件内容，还需要将本地的git库也同步到远程库中。deploy默认采用了main分支作为静态网页展示的分支，因此，为了保存本地库，需要额外的分支。我们这里创建了hexo分支，上传至远端git库中。</p>
 
       
     </div>

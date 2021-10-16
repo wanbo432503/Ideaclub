@@ -75,6 +75,101 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-组装无人机" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/" class="article-date">
+  <time class="dt-published" datetime="2021-10-15T23:25:20.000Z" itemprop="datePublished">2021-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/">组装无人机</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="四旋翼无人机DIY"><a href="#四旋翼无人机DIY" class="headerlink" title="四旋翼无人机DIY"></a>四旋翼无人机DIY</h2><p>从零开始，学习四旋翼无人机非控制知识，编写调试飞控代码，最后购买零件组装四旋翼无人机。</p>
+<p>##基本零件</p>
+<ol>
+<li>无刷电机（6个，其中两个备用）</li>
+<li>电子调速器（简称电调，6个，常见有好盈、中特威、新西达等品牌）</li>
+<li>螺旋桨（8个，需要4个正浆，4个反浆）</li>
+<li>飞行控制板（常见有KK、FF、玉兔等品牌）</li>
+<li>电池（11.1v航模动力电池）</li>
+<li>遥控器（最低四通道遥控器）</li>
+<li>机架（非必选）</li>
+<li>充电器(尽量选择平衡充电器)</li>
+</ol>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h3 id="遥控器篇"><a href="#遥控器篇" class="headerlink" title="遥控器篇"></a>遥控器篇</h3><h4 id="什么是通道？"><a href="#什么是通道？" class="headerlink" title="什么是通道？"></a>什么是通道？</h4><p>通道就是可以遥控器控制的动作路数，比如遥控器只能控制四轴上下飞，那么就是1个通道。但四轴在控制过程中需要控制的动作路数有：上下、左右、前后、旋转。所以最低得4通道遥控器。如果想以后玩航拍这些就需要更多通道的遥控器了。</p>
+<h4 id="什么是日本手、美国手？"><a href="#什么是日本手、美国手？" class="headerlink" title="什么是日本手、美国手？"></a>什么是日本手、美国手？</h4><p>遥控器上油门的位置在右边是日本手、在左边是美国手，所谓遥控器油门，在四轴飞行器当中控制供电电流大小，电流大，电动机转得快，飞得高、力量大。反之同理。判断遥控器的油门很简单，遥控器2个摇杆当中，上下板动后不自动回到中间的那个就是油门摇杆。</p>
+<h3 id="飞行控制板篇"><a href="#飞行控制板篇" class="headerlink" title="飞行控制板篇"></a>飞行控制板篇</h3><p>一般简称飞控就是这个东西了。</p>
+<h4 id="飞控的用途？"><a href="#飞控的用途？" class="headerlink" title="飞控的用途？"></a>飞控的用途？</h4><p>如果没有飞控板，四轴飞行器就会因为安装、外界干扰、零件之间的不一致型等原因形成飞行力量不平衡，后果就是左右、上下的胡乱翻滚，根本无法飞行，飞控板的作用就是通过飞控板上的陀螺仪，对四轴飞行状态进行快速调整（可采用的算法PID算法，卡尔曼滤波算法等）。</p>
+<p>例如发现右边力量大，向左倾斜，那么就减弱右边电流输出，电机变慢，升力变小，自然就不再向左倾斜。</p>
+<h4 id="选什么飞控好？"><a href="#选什么飞控好？" class="headerlink" title="选什么飞控好？"></a>选什么飞控好？</h4><p>个人意见初学的先来个kk飞控吧，最便宜，尝个鲜够用了。</p>
+<h3 id="电调篇"><a href="#电调篇" class="headerlink" title="电调篇"></a>电调篇</h3><h4 id="为什么需要电调？"><a href="#为什么需要电调？" class="headerlink" title="为什么需要电调？"></a>为什么需要电调？</h4><p>电调的作用就是将飞控板的控制信号，转变为电流的大小，以控制电机的转速。因为电机的电流是很大的，通常每个电机正常工作时，平均有3a左右的电流，如果没有电调的存在，飞控板根本无法承受这样大的电流（另外也没驱动无刷电机的功能）。同时电调在四轴当中还充当了电压变化器的作用，将11.1v的电压变为5v为飞控板和遥控器供电。</p>
+<h4 id="买多大的电调？"><a href="#买多大的电调？" class="headerlink" title="买多大的电调？"></a>买多大的电调？</h4><p>电调都会标上多少A，如20a，40a 这个数字就是电调能够提供的电流。大电流的电调可以兼容用在小电流的地方。小电流电调不能超标使用。</p>
+<p>根据我简单测试，常见新西达2212加1045浆最大电机电流有可能达到了5a，为了保险起见，建议这样配置用30a 或 40a电调（大家用20a电调的也多），说买大一点，以后还可以用到其他地方去。</p>
+<h4 id="四轴专用电调是什么意思？"><a href="#四轴专用电调是什么意思？" class="headerlink" title="四轴专用电调是什么意思？"></a>四轴专用电调是什么意思？</h4><p>因为四轴飞行要求，电调快速响应，而电调有快速响应和慢速响应的区别，所以四轴需要快速响应的电调。<br>其实大多数常见电调是可以编程的，能通过编程来设置响应速度。所以其实并没有什么专用一说。</p>
+<h4 id="电调编程什么意思？"><a href="#电调编程什么意思？" class="headerlink" title="电调编程什么意思？"></a>电调编程什么意思？</h4><p>首先要说明电调是有很多功能模式的，选择这个功能就是对电调编程。<br>编程的途径可以直接将电调连接至遥控接收机的油门输出通道（通常是3通道），按说明书，在遥控器上通过搬动摇杆进行设置，这个方法比较麻烦，但节约。另外，还可以通过厂家的编程卡来进行设置（需要单独购买），方法简单，无需接遥控器。</p>
+<p>为了保险，一定要将购买的电调设置一致，否则容易难于控制。如：电调的启动模式不一样，那么有些都转很快了，有些还很慢，这就有问题了。</p>
+<p>注：通过遥控器进行设置电调，一定要接上电机，因为说明书上说的“滴滴”类的声音，是通过电机发出来的。</p>
+<h3 id="无刷电机与螺旋桨篇"><a href="#无刷电机与螺旋桨篇" class="headerlink" title="无刷电机与螺旋桨篇"></a>无刷电机与螺旋桨篇</h3><p>电机分为有刷电机和无刷电机，不要买错了，无刷是四轴的主流。它力气大，耐用。</p>
+<h4 id="电机的型号含义？"><a href="#电机的型号含义？" class="headerlink" title="电机的型号含义？"></a>电机的型号含义？</h4><p>经常看人说什么2212电机，2018电机等等，到底是什么意思呢？这其实电机的尺寸。</p>
+<p>不管什么牌子的电机，具体都要对应4位这类数字，其中前面2位是电机转子的直径，后面2位是电机转子的高度。注意，不是外壳哦。</p>
+<p>简单来说，前面2位越大，电机越肥，后面2位越大，电机越高。 又高又大的电机，功率就更大，适合做大四轴。 通常2212电机是最常见的配置了。</p>
+<h4 id="什么是电机kv值？"><a href="#什么是电机kv值？" class="headerlink" title="什么是电机kv值？"></a>什么是电机kv值？</h4><p>每个无刷电机都会标准多少kv值，这个kv是外加1v电压对应的每分钟空转转速，例如：1000kv电机，外加1v电压，电机空转时每分钟转1000转，外加2v电压，电机空转就2000转了。</p>
+<h4 id="桨的型号含义？"><a href="#桨的型号含义？" class="headerlink" title="桨的型号含义？"></a>桨的型号含义？</h4><p>同电机类似，桨也有啥1045,7040这些4位数字，前面2位代表桨的直径（单位：英寸 1英寸=254毫米）后面2位是桨的角度。</p>
+<h4 id="什么是正反桨，为什么需要它？"><a href="#什么是正反桨，为什么需要它？" class="headerlink" title="什么是正反桨，为什么需要它？"></a>什么是正反桨，为什么需要它？</h4><p>四轴飞行为了抵消螺旋桨的自旋，相隔的桨旋转方向是不一样的，所以需要正反桨。正反桨的风都向下吹。适合顺时针旋转的叫正浆、适合逆时针旋转的是反浆。安装的时候，一定记得无论正反桨，有字的一面是向上的（桨叶圆润的一面要和电机旋转方向一致）。</p>
+<h4 id="电机与螺旋桨怎么搭配？"><a href="#电机与螺旋桨怎么搭配？" class="headerlink" title="电机与螺旋桨怎么搭配？"></a>电机与螺旋桨怎么搭配？</h4><p>这是非常复杂的问题，建议采用大家常见的配置吧，但原理这里可以阐述一下。</p>
+<ol>
+<li>螺旋桨越大，升力就越大，但对应需要更大的力量来驱动；</li>
+<li>螺旋桨转速越高，升力越大；</li>
+<li>电机的kv越小，转动力量就越大；</li>
+</ol>
+<p>综上所述，大螺旋桨就需要用低kv电机，小螺旋桨就需要高kv电机（因为需要用转速来弥补升力不足）<br>如果高kv带大桨，力量不够，那么就很困难，实际还是低俗运转，电机和电调很容易烧掉。<br>如果低kv带小桨，完全没有问题，但升力不够，可能造成无法起飞。</p>
+<p>例如：常用1000kv电机，配10寸左右的桨。</p>
+<h3 id="电池和充电器篇"><a href="#电池和充电器篇" class="headerlink" title="电池和充电器篇"></a>电池和充电器篇</h3><h4 id="为什么要选锂电池？"><a href="#为什么要选锂电池？" class="headerlink" title="为什么要选锂电池？"></a>为什么要选锂电池？</h4><p>同样电池容量锂电最轻，起飞效率最高。</p>
+<h4 id="电池的多少mah时什么意思？"><a href="#电池的多少mah时什么意思？" class="headerlink" title="电池的多少mah时什么意思？"></a>电池的多少mah时什么意思？</h4><p>表示电池容量，如1000mah电池，如果以1000ma放电，可持续放电1小时。如果以500mh放电，可以持续放电2小时。</p>
+<h4 id="电池后面的2s，3s，4s什么意思？"><a href="#电池后面的2s，3s，4s什么意思？" class="headerlink" title="电池后面的2s，3s，4s什么意思？"></a>电池后面的2s，3s，4s什么意思？</h4><p>代表锂电池的节数，锂电池1节标准电压为3.7v，那么2s电池，就是代表有2个3.7v电池在里面，电压为7.4v。</p>
+<h4 id="电池后面多少c是什么意思？"><a href="#电池后面多少c是什么意思？" class="headerlink" title="电池后面多少c是什么意思？"></a>电池后面多少c是什么意思？</h4><p>3C,5C锂电池这些所谓的专业术语绝大多数的时候都是出现在动力电池的应用产业。</p>
+<p>我们知道C从科学的定义上来说是指电池的放电能量。而通常我们所说的3C及5C大多数是指电池容量的倍率。</p>
+<p>举个简单的例子，比如我们常见的2000mah的锂电池，如果我们要求3C放电倍率，那就是正常该2000mah的锂电池理论最大放电6A。我们知道通常普通的18650锂电池基本应该在3C以内，但高倍率的可以做到10C甚至20C。对于我们绝大多数的新进入到锂电池这个行业的新手朋友来说，我们可以简单粗暴的把这个C理解为爆发力，C越大爆发越足，短期提供的能量转化自然也就越大。</p>
+<p>这很重要，如果用高c的电池，大电流放电，电池会迅速损坏，甚至自燃。</p>
+<h4 id="多少c快充是什么意思？"><a href="#多少c快充是什么意思？" class="headerlink" title="多少c快充是什么意思？"></a>多少c快充是什么意思？</h4><p>这个与上面的c一样，只是将放电变成了充电，如1000mah电池，2c快充，就代表可以用2000ma的电流来充电。所以千万不要图快冒然用大电流，超过规定参数充电，电池很容易损坏。</p>
+<h4 id="怎么配电池？"><a href="#怎么配电池？" class="headerlink" title="怎么配电池？"></a>怎么配电池？</h4><p>这与选择的电机、螺旋桨，想要的飞行时间相关。<br>容量越大，c越高，s越多，电池越重；<br>基本原理是用大桨，因为整体搭配下来功率高，自身升力大，为了保证可玩时间，可选高容量，高c，3s以上电池。最低建议1500mah，20c，3s。</p>
+<h4 id="平衡充电什么意思"><a href="#平衡充电什么意思" class="headerlink" title="平衡充电什么意思"></a>平衡充电什么意思</h4><p>如3s电池，内部是3个锂电池，因为制造工艺原因，没办法保证每个电池完全一致，充电放电特性都有差异，电池串联的情况下，就容易照常某些放电过度或充电过度，充电不饱满等，所以解决办法是分别对内部单节电池充电。动力锂电都有2组线，1组是输出线（2根），1组是单节锂电引出线（与s数有关），充电时按说明书，都插入充电器内，就可以进行平衡充电了。</p>
+<h3 id="机架篇"><a href="#机架篇" class="headerlink" title="机架篇"></a>机架篇</h3><h4 id="机架的轴长短有没有规定？"><a href="#机架的轴长短有没有规定？" class="headerlink" title="机架的轴长短有没有规定？"></a>机架的轴长短有没有规定？</h4><p>理论上讲，只要4个螺旋桨不打架就可以了，但要考虑到，螺旋桨之间因为旋转产生的乱流互相影响，建议还是不要太近，否则影响效率。 这也是为什么四轴用2叶螺旋桨比用3叶螺旋桨多的原因之一（3叶的还有个缺点，平衡不好做）</p>
+<h2 id="飞控解锁"><a href="#飞控解锁" class="headerlink" title="飞控解锁"></a>飞控解锁</h2><p>飞控接上电不是马上可以起飞的，这是安全设计，所以需要解锁。（飞控设置略，很多攻略了）<br>通上电，飞控板上的灯是不亮的，只有电调发出的滴滴声，将油门打到最低（注意油门方向，需要实现确定是设置的向上为最低，还是向下为最低），然后方向舵向右板到底，飞控板的灯就会亮，电调也不会再继续发声，说明准备好起飞了。</p>
+<h2 id="螺旋桨的安装"><a href="#螺旋桨的安装" class="headerlink" title="螺旋桨的安装"></a>螺旋桨的安装</h2><p>调试完毕，最后安装螺旋桨，安装好后，第一件事是拿手上，轻加油门，看看是否风都往下吹，电机的旋转是否是 正转和反转间隔的。如果剧烈抖动，并且升力很小，就应该是正反浆没有安装对。交换一下。 如果旋转方向不是间隔的，就需要将电调和电机的连接线1和3，交换一下，进行旋转方向校正。 次序为，先方向，后螺旋桨。</p>
+<h4 id="如何知道能正常起飞？"><a href="#如何知道能正常起飞？" class="headerlink" title="如何知道能正常起飞？"></a>如何知道能正常起飞？</h4><p>一切准备完毕，怎么知道可以试飞了呢，我个人建议为了避免匆忙上马，秒炸。先拿手上试飞比较好，但要注意离身体距离。<br>拿手上通电，加油门，如果一切正常，四轴是 不会大幅度的晃动的，而是比较平稳。还可以故意左右晃动一下，会感觉到四轴保持平衡的反力量，只要达到这个效果，就基本达到了试飞的条件。kk飞控我复位了好几次，只要没有意外，是基本都能成功的。<br>试飞场地建议选草坪，这样的不容甩坏。</p>
+<p>我感觉初学者最容易犯的错误是看见一飞高，紧张了就猛减油门，这样就会垂直落地，一定要有心理准备，只要不伤人，在比较高的情况下，还是慢减油门比较好。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/" data-id="ckut0134c0004gcu7bcaw8oqr" data-title="组装无人机" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Ideaclub/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA%EF%BC%8C%E9%A3%9E%E6%8E%A7%EF%BC%8C%E5%B5%8C%E5%85%A5%E5%BC%8F%EF%BC%8C%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F/" rel="tag">无人机，飞控，嵌入式，实时系统</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-结婚日期" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/" class="article-date">
@@ -111,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/" data-id="ckleg5h7p000093u7dp9j5fbw" data-title="结婚日期" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/" data-id="ckut0134e0008gcu73mprhosw" data-title="结婚日期" class="article-share-link">分享</a>
       
       
       
@@ -154,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/20/github%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" data-id="ckldvgcd000001nu721im0miw" data-title="github在线看代码" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/20/github%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" data-id="ckut013430000gcu7abll4ejy" data-title="github在线看代码" class="article-share-link">分享</a>
       
       
       
@@ -225,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/20/%E5%BC%80%E6%B7%98%E5%AE%9D%E5%BA%97%E5%8D%96%E5%B9%B2%E6%9E%9C%E7%9A%84%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90/" data-id="ckldq2kty00008eu7gu7m9hgl" data-title="开淘宝店卖干果的可行性分析" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/20/%E5%BC%80%E6%B7%98%E5%AE%9D%E5%BA%97%E5%8D%96%E5%B9%B2%E6%9E%9C%E7%9A%84%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90/" data-id="ckut0134b0003gcu74emr47mx" data-title="开淘宝店卖干果的可行性分析" class="article-share-link">分享</a>
       
       
       
@@ -292,7 +387,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckk1au2tl000143u75o9xaiko" data-title="静态博客能干啥?" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/" data-id="ckut0134d0005gcu7gybg0ter" data-title="静态博客能干啥?" class="article-share-link">分享</a>
       
       
       
@@ -341,7 +436,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/hello-world/" data-id="ckk1au2tg000043u7fem4717c" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/01/17/hello-world/" data-id="ckut013480001gcu79a3jgq4l" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -366,7 +461,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/github-%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" rel="tag">github 在线看代码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E5%8D%96%E5%B9%B2%E6%9E%9C-%E6%B7%98%E5%AE%9D%E5%BA%97-%E7%BD%91%E7%82%B9/" rel="tag">卖干果 淘宝店 网点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" rel="tag">静态博客 应用场景</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E9%BB%84%E5%8E%86-%E7%BB%93%E5%A9%9A/" rel="tag">黄历 结婚</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/github-%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" rel="tag">github 在线看代码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E5%8D%96%E5%B9%B2%E6%9E%9C-%E6%B7%98%E5%AE%9D%E5%BA%97-%E7%BD%91%E7%82%B9/" rel="tag">卖干果 淘宝店 网点</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA%EF%BC%8C%E9%A3%9E%E6%8E%A7%EF%BC%8C%E5%B5%8C%E5%85%A5%E5%BC%8F%EF%BC%8C%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F/" rel="tag">无人机，飞控，嵌入式，实时系统</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" rel="tag">静态博客 应用场景</a></li><li class="tag-list-item"><a class="tag-list-link" href="/Ideaclub/tags/%E9%BB%84%E5%8E%86-%E7%BB%93%E5%A9%9A/" rel="tag">黄历 结婚</a></li></ul>
     </div>
   </div>
 
@@ -376,7 +471,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/Ideaclub/tags/github-%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" style="font-size: 10px;">github 在线看代码</a> <a href="/Ideaclub/tags/%E5%8D%96%E5%B9%B2%E6%9E%9C-%E6%B7%98%E5%AE%9D%E5%BA%97-%E7%BD%91%E7%82%B9/" style="font-size: 10px;">卖干果 淘宝店 网点</a> <a href="/Ideaclub/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" style="font-size: 10px;">静态博客 应用场景</a> <a href="/Ideaclub/tags/%E9%BB%84%E5%8E%86-%E7%BB%93%E5%A9%9A/" style="font-size: 10px;">黄历 结婚</a>
+      <a href="/Ideaclub/tags/github-%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" style="font-size: 10px;">github 在线看代码</a> <a href="/Ideaclub/tags/%E5%8D%96%E5%B9%B2%E6%9E%9C-%E6%B7%98%E5%AE%9D%E5%BA%97-%E7%BD%91%E7%82%B9/" style="font-size: 10px;">卖干果 淘宝店 网点</a> <a href="/Ideaclub/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA%EF%BC%8C%E9%A3%9E%E6%8E%A7%EF%BC%8C%E5%B5%8C%E5%85%A5%E5%BC%8F%EF%BC%8C%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F/" style="font-size: 10px;">无人机，飞控，嵌入式，实时系统</a> <a href="/Ideaclub/tags/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/" style="font-size: 10px;">静态博客 应用场景</a> <a href="/Ideaclub/tags/%E9%BB%84%E5%8E%86-%E7%BB%93%E5%A9%9A/" style="font-size: 10px;">黄历 结婚</a>
     </div>
   </div>
 
@@ -385,7 +480,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Ideaclub/archives/2021/02/">二月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Ideaclub/archives/2021/01/">一月 2021</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/Ideaclub/archives/2021/10/">十月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Ideaclub/archives/2021/02/">二月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/Ideaclub/archives/2021/01/">一月 2021</a></li></ul>
     </div>
   </div>
 
@@ -396,6 +491,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/">组装无人机</a>
+          </li>
         
           <li>
             <a href="/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/">结婚日期</a>
@@ -411,10 +510,6 @@
         
           <li>
             <a href="/Ideaclub/2021/01/17/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E8%83%BD%E5%B9%B2%E5%95%A5/">静态博客能干啥?</a>
-          </li>
-        
-          <li>
-            <a href="/Ideaclub/2021/01/17/hello-world/">Hello World</a>
           </li>
         
       </ul>

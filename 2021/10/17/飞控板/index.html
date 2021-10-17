@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>结婚日期 | Idea Club</title>
+  <title>四旋翼无人机DIY系列（二）——飞控板 | Idea Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="选个日期领结婚证。 本月月末碰上月末周六加班，因此没有两天假期。 不过看在元宵佳节的份上，这个周末应该能凑一凑。说不定还能在一起过一个佳节。 看了黄历之后，可供选择的日期也就以下这几个了：  2月28号，元宵节后两天，大吉大利。26号老婆过来，27号晚上去天街海马体拍照，28号拿到照片就去领结婚证，需提前预约。 3月7号，女生节，寓意好。5号老婆过来，6号一整天都有时间去天街海马体拍照，当天可以出">
+  <meta name="description" content="对于想要自己动手组装无人机的人，熟悉无人机的软硬件原理是基础。而无人机的核心部件就是飞控板，以及飞控板上的软件。从这个一点入手，学习无人机配置，调参等内容，可以尽最大可能降低试错成本。 飞控板选型闭源飞控开源飞控飞控软件开发环境搭建（MacOS版本）飞控软件架构设计飞控板初始化遥控接收机数据处理飞行算法设计">
 <meta property="og:type" content="article">
-<meta property="og:title" content="结婚日期">
-<meta property="og:url" content="https://wanbo432503.github.io/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/index.html">
+<meta property="og:title" content="四旋翼无人机DIY系列（二）——飞控板">
+<meta property="og:url" content="https://wanbo432503.github.io/Ideaclub/2021/10/17/%E9%A3%9E%E6%8E%A7%E6%9D%BF/index.html">
 <meta property="og:site_name" content="Idea Club">
-<meta property="og:description" content="选个日期领结婚证。 本月月末碰上月末周六加班，因此没有两天假期。 不过看在元宵佳节的份上，这个周末应该能凑一凑。说不定还能在一起过一个佳节。 看了黄历之后，可供选择的日期也就以下这几个了：  2月28号，元宵节后两天，大吉大利。26号老婆过来，27号晚上去天街海马体拍照，28号拿到照片就去领结婚证，需提前预约。 3月7号，女生节，寓意好。5号老婆过来，6号一整天都有时间去天街海马体拍照，当天可以出">
+<meta property="og:description" content="对于想要自己动手组装无人机的人，熟悉无人机的软硬件原理是基础。而无人机的核心部件就是飞控板，以及飞控板上的软件。从这个一点入手，学习无人机配置，调参等内容，可以尽最大可能降低试错成本。 飞控板选型闭源飞控开源飞控飞控软件开发环境搭建（MacOS版本）飞控软件架构设计飞控板初始化遥控接收机数据处理飞行算法设计">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-02-21T01:02:44.000Z">
-<meta property="article:modified_time" content="2021-02-21T01:10:06.224Z">
+<meta property="article:published_time" content="2021-10-17T02:37:33.000Z">
+<meta property="article:modified_time" content="2021-10-17T02:43:05.520Z">
 <meta property="article:author" content="Bo Wan">
-<meta property="article:tag" content="黄历 结婚">
+<meta property="article:tag" content="无人机，飞控，嵌入式，实时系统">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/Ideaclub/atom.xml" title="Idea Club" type="application/atom+xml">
@@ -78,10 +78,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-结婚日期" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-飞控板" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/" class="article-date">
-  <time class="dt-published" datetime="2021-02-21T01:02:44.000Z" itemprop="datePublished">2021-02-21</time>
+    <a href="/Ideaclub/2021/10/17/%E9%A3%9E%E6%8E%A7%E6%9D%BF/" class="article-date">
+  <time class="dt-published" datetime="2021-10-17T02:37:33.000Z" itemprop="datePublished">2021-10-17</time>
 </a>
     
   </div>
@@ -92,7 +92,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      结婚日期
+      四旋翼无人机DIY系列（二）——飞控板
     </h1>
   
 
@@ -100,25 +100,16 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>选个日期领结婚证。</p>
-<p>本月月末碰上月末周六加班，因此没有两天假期。</p>
-<p>不过看在元宵佳节的份上，这个周末应该能凑一凑。说不定还能在一起过一个佳节。</p>
-<p>看了黄历之后，可供选择的日期也就以下这几个了：</p>
-<ol>
-<li>2月28号，元宵节后两天，大吉大利。26号老婆过来，27号晚上去天街海马体拍照，28号拿到照片就去领结婚证，需提前预约。</li>
-<li>3月7号，女生节，寓意好。5号老婆过来，6号一整天都有时间去天街海马体拍照，当天可以出片，7号去领结婚证，需提前预约。</li>
-<li>3月14号，龙头节，大吉大利。12号老婆过来，13号拍照，14号领证，需提前预约。</li>
-</ol>
-<p>具体日子，还要看老婆那边的意见。</p>
-
+        <p>对于想要自己动手组装无人机的人，熟悉无人机的软硬件原理是基础。而无人机的核心部件就是飞控板，以及飞控板上的软件。从这个一点入手，学习无人机配置，调参等内容，可以尽最大可能降低试错成本。</p>
+<h2 id="飞控板选型"><a href="#飞控板选型" class="headerlink" title="飞控板选型"></a>飞控板选型</h2><h3 id="闭源飞控"><a href="#闭源飞控" class="headerlink" title="闭源飞控"></a>闭源飞控</h3><h3 id="开源飞控"><a href="#开源飞控" class="headerlink" title="开源飞控"></a>开源飞控</h3><h2 id="飞控软件开发环境搭建（MacOS版本）"><a href="#飞控软件开发环境搭建（MacOS版本）" class="headerlink" title="飞控软件开发环境搭建（MacOS版本）"></a>飞控软件开发环境搭建（MacOS版本）</h2><h2 id="飞控软件架构设计"><a href="#飞控软件架构设计" class="headerlink" title="飞控软件架构设计"></a>飞控软件架构设计</h2><h3 id="飞控板初始化"><a href="#飞控板初始化" class="headerlink" title="飞控板初始化"></a>飞控板初始化</h3><h3 id="遥控接收机数据处理"><a href="#遥控接收机数据处理" class="headerlink" title="遥控接收机数据处理"></a>遥控接收机数据处理</h3><h3 id="飞行算法设计"><a href="#飞行算法设计" class="headerlink" title="飞行算法设计"></a>飞行算法设计</h3>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/02/21/%E7%BB%93%E5%A9%9A%E6%97%A5%E6%9C%9F/" data-id="ckut0134e0008gcu73mprhosw" data-title="结婚日期" class="article-share-link">分享</a>
+      <a data-url="https://wanbo432503.github.io/Ideaclub/2021/10/17/%E9%A3%9E%E6%8E%A7%E6%9D%BF/" data-id="ckuumc4ym00006yu74yuihhq3" data-title="四旋翼无人机DIY系列（二）——飞控板" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Ideaclub/tags/%E9%BB%84%E5%8E%86-%E7%BB%93%E5%A9%9A/" rel="tag">黄历 结婚</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Ideaclub/tags/%E6%97%A0%E4%BA%BA%E6%9C%BA%EF%BC%8C%E9%A3%9E%E6%8E%A7%EF%BC%8C%E5%B5%8C%E5%85%A5%E5%BC%8F%EF%BC%8C%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F/" rel="tag">无人机，飞控，嵌入式，实时系统</a></li></ul>
 
     </footer>
   </div>
@@ -126,19 +117,10 @@
     
 <nav id="article-nav">
   
-    <a href="/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">前一篇</strong>
-      <div class="article-nav-title">
-        
-          四旋翼无人机DIY系列（一）—— 基本入门
-        
-      </div>
-    </a>
   
-  
-    <a href="/Ideaclub/2021/02/20/github%E5%9C%A8%E7%BA%BF%E7%9C%8B%E4%BB%A3%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/Ideaclub/2021/10/16/%E7%BB%84%E8%A3%85%E6%97%A0%E4%BA%BA%E6%9C%BA/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">github在线看代码</div>
+      <div class="article-nav-title">四旋翼无人机DIY系列（一）—— 基本入门</div>
     </a>
   
 </nav>
